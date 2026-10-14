@@ -1,8 +1,7 @@
 # 40-TECHSTACK — titipo-backend-service
 
-STATUS: defined pending (target dikunci, implementasi menunggu).
-
-Mengacu: TitipO-TownHall v1.0.0
+> Versi: v1.0.0 | Status: disetujui | Menggantikan: -
+> Acuan: [TitipO-TownHall platform/versions/v1.0.0](https://github.com/Coding-Skuy/TitipO-TownHall/tree/main/platform/versions/v1.0.0) (BRD/PRD/FRD/FSD/SRS beku 2026-10-07).
 
 ## 1. Target stack
 
@@ -31,3 +30,8 @@ Aturan bisnis yang dijaga backend: pesan maksimal 20.00, serah 06.00–08.00, fe
 - Hanya facade TitipO; bukan pemilik katalog Lumbung dan bukan penghitung harga pokok.
 - Dilarang menyimpan secret di repo dan dilarang mengirim service key ke browser atau biner mobile.
 - Dilarang menaikkan atau menurunkan pin axum 0.8.4, sqlx, uuid v7 tanpa PR.
+
+## 3. Dokumentasi API
+
+- Kontrak: `docs/api/openapi.yaml` (OpenAPI 3.1, versi 1.0.0) dengan referensi Scalar di `docs/api/index.html`.
+- Server: `https://api.titipo.chefgenie.id/v1` dan `http://localhost:8080`.

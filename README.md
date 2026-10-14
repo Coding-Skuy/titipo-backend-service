@@ -44,3 +44,13 @@ Detail: `docs/auth.md`.
 - Kontrak Lumbung: https://github.com/Coding-Skuy/Lumbung-TownHall
 - App: https://github.com/Coding-Skuy/titipo-app-kmp
 - Web: https://github.com/Coding-Skuy/titipo-web
+
+## Dokumentasi API
+
+Kontrak OpenAPI 3.1 v1.0.0 ada di `docs/api/openapi.yaml`, dirender dengan Scalar di `docs/api/index.html`.
+
+- Online (GitHub Pages): https://coding-skuy.github.io/titipo-backend-service/api/
+- Buka lokal: `bun x serve docs/api` lalu buka alamat yang tampil.
+- Validasi: `bun x @redocly/cli@latest lint docs/api/openapi.yaml`.
+
+Kontrak diturunkan dari TitipO-TownHall `platform/versions/v1.0.0/FSD/30-kontrak.md`; perubahan kontrak wajib bump versi + ADR baru (lihat `AGENTS.md`).
